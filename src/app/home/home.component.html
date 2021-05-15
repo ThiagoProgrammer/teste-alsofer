@@ -1,7 +1,12 @@
+<div class="main" >
+<div>
+    <h1 class="text-center m-5 text-white">Listagem de Instituições</h1>
+</div>
+<div class="d-flex justify-content-center align-items-center">
 <jqxGrid 
 [selectionmode]="'checkbox'" 
-[source]="source" 
-[theme]="'material'" 
+[source]="institutions" 
+[theme]="'material'"
 [autoheight]="true" 
 [pageable]="true" 
 [altrows]="true" 
@@ -10,3 +15,5 @@
 [columns]="columns" 
 #grid>
 </jqxGrid>  
+</div>
+</div>

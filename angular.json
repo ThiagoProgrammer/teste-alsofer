@@ -29,7 +29,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "./node_modules/jqwidgets-ng/jqwidgets/styles/jqx.base.css"
+              "./node_modules/jqwidgets-ng/jqwidgets/styles/jqx.base.css",
+              "./node_modules/jqwidgets-ng/jqwidgets/styles/jqx.material.css"
             ],
             "scripts": []
           },
@@ -93,7 +94,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "./node_modules/jqwidgets-ng/jqwidgets/styles/jqx.base.css"
+              "./node_modules/jqwidgets-ng/jqwidgets/styles/jqx.base.css",
+              "./node_modules/jqwidgets-ng/jqwidgets/styles/jqx.material.css"
             ],
             "scripts": []
           }

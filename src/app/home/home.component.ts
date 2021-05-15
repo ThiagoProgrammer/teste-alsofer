@@ -8,15 +8,13 @@ import { InstitutionService } from '../_service/institutions.service';
 })
 
 export class HomeComponent implements OnInit {
-  instituitions: any;
+  institutions: any;
   columns = [
 		{text: 'Id', datafield: 'id'},
-		{text: 'Name', datafield: 'name'}
+		{text: 'Razão Social', datafield: 'razaoSocial'}
   ];
  
-  source = new jqx.dataAdapter({
-    
-	 });
+
   constructor(private institutionService: InstitutionService) {}
 
   ngOnInit(): void {
@@ -24,6 +22,10 @@ export class HomeComponent implements OnInit {
   }
   async getInstitutions() {
     const resp: any = await this.institutionService.getInstitutions();
+    this.institutions = new jqx.dataAdapter({
+      localData: resp
+    }
+      );
 
     
   }

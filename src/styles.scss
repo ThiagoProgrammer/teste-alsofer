@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    background: #525252 !important; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #525252, #3d72b4) !important; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #525252, #3d72b4) !important; 
+}
