@@ -1,7 +1,9 @@
 <div class="main" >
-<div>
-    <h1 class="text-center m-5 text-white">Listagem de Instituições</h1>
+<div class="d-flex justify-content-center">
+    <img width="200px" class="p-3" src="../../assets/img/alsofer.png" alt="">
+ 
 </div>
+<h1 class="text-center m-4 text-white">Listagem de Instituições</h1>
 <div class="d-flex justify-content-center align-items-center">
 <jqxGrid 
 [selectionmode]="'checkbox'" 
@@ -12,6 +14,8 @@
 [altrows]="true" 
 [filterable]="true" 
 [sortable]="true" 
+[editable]="true"
+[groupable]="true"
 [columns]="columns" 
 #grid>
 </jqxGrid>  
